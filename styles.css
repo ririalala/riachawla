@@ -7,10 +7,20 @@ body {
 }
 
 header {
-    background-color: #6A4C57;
-    height: 150px;
+    background-color: #6A4C57;;
     color: white;
-    padding: 20px;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: wheat; /* Dark gray */
+    font-weight: bold; /* Make it bold */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+a:hover {
+    color: mediumorchid; /* orchid on hover */
 }
 
 /* General Button Styles */
