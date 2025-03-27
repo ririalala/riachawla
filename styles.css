@@ -1,29 +1,41 @@
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #D4A6A1;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #6A4C57;
+    height: 150px;
     color: white;
     padding: 20px;
 }
 
+/* General Button Styles */
 button {
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: transparent; /* Transparent background */
+    color: #D4A6A1; /* Dark mauve text */
+    border: 2px solid #6A4C57; /* Dusky rose colored outline */
+    padding: 12px 24px;
+    font-size: 20px;
     cursor: pointer;
     margin-top: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 0; /* Sharp corners */
 }
 
+/* Hover Effects */
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1); /* Button grows slightly on hover */
+    color: white; /* Text turns white on hover */
+    font-size: 22px; /* Font size increases on hover */
+}
+
+/* Active Effects - When the button is clicked */
+button:active {
+    transform: scale(1);
+    background-color: #6A4C57; /* Dark mauve background when clicked */
+    color: white; /* Text turns white on active */
 }
