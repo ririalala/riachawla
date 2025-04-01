@@ -72,6 +72,89 @@ a:hover {
     color: mediumorchid; /* orchid on hover */
 }
 
+body {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+}
+
+/* First Row: About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+/* Profile Picture */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover;
+}
+
+/* About Text */
+.about-text {
+    flex: 2;
+    padding-left: 30px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Second Row: Section Header */
+.section-header {
+    text-align: Left;
+    padding: 10px 0;
+    padding-left: 150px;
+    background-color: #fffdfc;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Third Row: Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.project {
+    text-align: center;
+}
+
+.project img {
+    width: 30%; /*change this when thumbnails are added*/
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
 /* General Button Styles */
 button {
     background-color: transparent; /* Transparent background */

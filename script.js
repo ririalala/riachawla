@@ -1,5 +1,11 @@
 // script.js
 
+// Function to animate the body on load
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = "1";
+    document.body.style.transform = "translateY(0)";
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     // Function to animate each button
     const animateButton = (buttonId, delay) => {
